@@ -7,7 +7,7 @@ def binomial_pmf(n, p, k):
 
 
 def poisson_pmf(k, lam):
-    return exp(-lam)**k / factorial(k)
+    return lam**k * exp(-lam) / factorial(k)
 
 
 def geometric_pmf(n, p):
